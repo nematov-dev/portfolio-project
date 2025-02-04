@@ -8,9 +8,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['nematov.uz','www.nematov.uz','127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 
@@ -105,19 +105,12 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'home/djangomo/nematov.uz/django/static'
-STATICFILES_DIRS = ('home/djangomo/nematov.uz/django/assets',)
 
-#Local
-# STATIC_ROOT =   BASE_DIR / 'static/'
-# STATICFILES_DIRS = [BASE_DIR / 'assets']
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATIC_ROOT =   BASE_DIR / 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'assets']
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = 'home/djangomo/nematov.uz/django/media'
-
-#local
-# MEDIA_ROOT = BASE_DIR / 'media/'
+MEDIA_ROOT = BASE_DIR / 'media/'
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
