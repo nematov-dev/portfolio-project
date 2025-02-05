@@ -90,6 +90,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+CSRF_TRUSTED_ORGINS = [
+    "https://nematov.uz",
+    "https://www.nematov.uz"
+]
+
 
 LANGUAGE_CODE = 'en-us'
 
