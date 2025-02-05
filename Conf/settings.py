@@ -86,7 +86,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-CSRF_TRUSTED_ORGINS = [
+CSRF_TRUSTED_ORIGINS = [
     "https://nematov.uz",
     "https://www.nematov.uz"
 ]
