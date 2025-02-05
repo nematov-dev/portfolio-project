@@ -7,11 +7,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = config('SECRET_KEY')
 
-
 DEBUG = config('DEBUG')
 
 ALLOWED_HOSTS = ['161.35.214.26','nematov.uz','www.nematov.uz']
-
 
 
 
@@ -24,14 +22,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'app_pages',
-    'whitenoise.runserver_nostatic'
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -97,13 +93,6 @@ CSRF_TRUSTED_ORGINS = [
 
 
 LANGUAGE_CODE = 'en-us'
-
-LANGUAGES = [
-    ('en', 'English'),
-    ('uz', 'Uzbek'),
-]
-
-LOCALE_PATH = ( BASE_DIR / 'locale', )
 
 TIME_ZONE = 'Asia/Tashkent'
 
