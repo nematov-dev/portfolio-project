@@ -2377,13 +2377,13 @@ body.mobile .animated {
 }
 
 .header {
-    background: #4bc4b5;
-    background: -moz-linear-gradient(top, #309286 0%, #4bc4b5 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, #309286), color-stop(100%, #4bc4b5));
-    background: -webkit-linear-gradient(top, #309286 0%, #4bc4b5 100%);
-    background: -o-linear-gradient(top, #309286 0%, #4bc4b5 100%);
-    background: -ms-linear-gradient(top, #309286 0%, #4bc4b5 100%);
-    background: linear-gradient(to bottom, #309286 0%, #4bc4b5 100%);
+    background: #1c1393;
+    background: -moz-linear-gradient(top, #1c1393 0%, #1c1393 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #1c1393), color-stop(100%, #1c1393));
+    background: -webkit-linear-gradient(top, #1c1393 0%, #1c1393 100%);
+    background: -o-linear-gradient(top, #1c1393 0%, #1c1393 100%);
+    background: -ms-linear-gradient(top, #1c1393 0%, #1c1393 100%);
+    background: linear-gradient(to bottom, #1c1393 0%, #1c1393 100%);
 	position: relative;
     box-shadow: 0 1px 12px 0px rgba(51, 51, 51, 0.23);
     -moz-box-shadow: 0 1px 12px 0px rgba(51, 51, 51, 0.23);
